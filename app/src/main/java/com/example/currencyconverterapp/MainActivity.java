@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public  void conversionAPI(String initialCountry,String finalCountry,Double amt){
         connectionApi= ClientClass.getClient();
-        Call<CurrencyResponse> call=connectionApi.getCurrencyValue(initialCountry,finalCountry,amt);
+        Call<CurrencyResponse> call=connectionApi.getCurrencyValue(initialCountry,finalCountry);
 
         progressBar.setVisibility(View.VISIBLE);
             call.enqueue(new Callback<CurrencyResponse>() {

@@ -10,7 +10,7 @@ public interface ConnectionApi {
     @GET("/api/v1/convert")
     Call<CurrencyResponse>getCurrencyValue(
       @Query("from") String from,
-      @Query("to") String to,
-      @Query("amount") Double amount
+      @Query("to") String to
+//      @Query("amount") Double amount
     );
 }
