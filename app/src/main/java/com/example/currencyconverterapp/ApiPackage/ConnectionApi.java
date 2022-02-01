@@ -7,10 +7,10 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface ConnectionApi {
-    @GET("/api/v1/convert")
+    @GET("/api/v7/convert")
     Call<CurrencyResponse>getCurrencyValue(
-      @Query("from") String from,
-      @Query("to") String to
-//      @Query("amount") Double amount
+      @Query("q") String from,
+      @Query("apiKey") String apikey,
+      @Query("compact") String compact
     );
 }
