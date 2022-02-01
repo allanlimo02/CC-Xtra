@@ -50,7 +50,6 @@
             @BindView(R.id.recent) TextView recent;
             @BindView(R.id.finalcurrency) TextView finalCurrency;
 
-
             ResponseAdapter responseAdapter;
             private ArrayList<PreferenceItems> recentSearch;
             PreferenceItems preferenceItems;
@@ -163,10 +162,9 @@
         void recviewbuilder(String c1, String c2,String c3){
                 preferenceItems=new PreferenceItems(c1,c2,c3);
 
-
+        }
+        void retrofitConversionClass(){
 
 
         }
-
-
         }
